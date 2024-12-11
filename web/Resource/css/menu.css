@@ -1,0 +1,135 @@
+/* Header styles */
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and menu */
+    width: 100%; /* Full width */
+    background-color: #ff8c00; /* Orange theme */
+    height: 60px; /* Fixed height */
+    padding: 0 10px; /* Horizontal padding */
+    box-sizing: border-box; /* Include padding in height calculation */
+}
+#header {
+    position: relative;
+    z-index: 10;
+}
+
+/* Logo styles */
+#logo img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Navigation styles */
+#navbar .nav-item {
+    margin: 0 10px;
+}
+
+/* Navigation icon styles */
+#nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+#nav-icons .nav-item {
+    margin: 0 10px;
+}
+
+#nav-icons .nav-link {
+    color: #fff;
+    font-size: 24px; /* Icon size */
+    display: flex;
+    align-items: center;
+}
+
+#nav-icons .nav-link:hover {
+    color: #ffeb99;
+}
+
+/* Search box styles */
+#search-box {
+    position: relative;
+    max-width: 300px;
+}
+
+#search-box input[type="text"] {
+    width: 100%;
+    padding: 8px 40px 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+#search-box button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+    background-color: #ff8c00;
+}
+
+.dropdown-item:hover {
+    background-color: #ffeb99;
+    color: #000;
+}
+
+/* Subnav (user dropdown) styles */
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 150px;
+    z-index: 20;
+    background-color: #ff8c00;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-button:hover + .subnav, 
+.subnav:hover {
+    display: block;
+}
+
+.subnav .dropdown-item {
+    color: #fff;
+    padding: 8px 12px;
+}
+
+.subnav .dropdown-item:hover {
+    background-color: #ff7f00;
+}
+
+/* Avatar styles */
+.avatar {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Shopping cart icon */
+#shop-menu .fa-shopping-cart {
+    font-size: 24px;
+    color: #fff;
+}
+
+#shop-menu .nav-item {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#shop-menu .nav-link {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
